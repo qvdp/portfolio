@@ -35,6 +35,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/nuxt-fullpage.client.js', mode: 'client' },
+    { src: '~/plugins/nuxt-fullpage.server.js' }
   ],
   /*
   ** Auto import components
@@ -59,7 +61,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    // Doc: https://github.com/vaso2/nuxt-fullpage.js
+    'nuxt-fullpage.js'
   ],
   /*
   ** Axios module configuration
@@ -79,6 +83,6 @@ export default {
   },
 
   purgeCSS: {
-    whitelist: ['dark-mode']
+    whitelist: ['dark-mode', 'fullpage.js/dist/fullpage.css']
   }
 }

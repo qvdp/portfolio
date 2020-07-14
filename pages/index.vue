@@ -1,10 +1,21 @@
 <template>
-  <div class="min-h-screen flex justify-center items-center text-center mx-auto">
-    <div class="text-gray-700 dark:text-white">
-      <Logo />
-      <h1 class="title">
-        portfolio
-      </h1>
+  <div class="bg-gray-100 dark:bg-black">
+    <div class="section">
+      <lighting-switcher />
+    </div>
+    <div class="section">
+      Second section ...
     </div>
   </div>
 </template>
+
+<script>
+import LightingSwitcher from '@/components/template/LightingSwitcher'
+
+export default {
+  name: 'Home',
+  components: {
+    LightingSwitcher
+  }
+}
+</script>

@@ -1,16 +1,5 @@
 <template>
-  <div class="bg-gray-100 dark:bg-black">
-    <lighting-switcher />
+  <full-page :options="{ licenseKey: '98DCED20-01AA410B-98E959B2-BED07DE8' }">
     <nuxt />
-  </div>
+  </full-page>
 </template>
-
-<script>
-import LightingSwitcher from '@/components/template/LightingSwitcher'
-
-export default {
-  components: {
-    LightingSwitcher
-  }
-}
-</script>
