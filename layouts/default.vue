@@ -1,5 +1,5 @@
 <template>
-  <full-page :options="{ licenseKey: '98DCED20-01AA410B-98E959B2-BED07DE8' }">
+  <div class="bg-gray-100 dark:bg-black">
     <nuxt />
-  </full-page>
+  </div>
 </template>

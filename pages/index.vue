@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-gray-100 dark:bg-black">
+  <full-page :options="{ licenseKey: '98DCED20-01AA410B-98E959B2-BED07DE8' }">
     <div class="section">
       <lighting-switcher />
     </div>
     <div class="section">
       Second section ...
     </div>
-  </div>
+  </full-page>
 </template>
 
 <script>
