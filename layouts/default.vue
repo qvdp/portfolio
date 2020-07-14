@@ -1,5 +1,17 @@
 <template>
-  <div class="bg-gray-100 dark:bg-black">
+  <div class="bg-white dark:bg-black">
+    <navigation />
     <nuxt />
   </div>
 </template>
+
+<script>
+import Navigation from '@/components/template/Navigation'
+
+export default {
+  name: 'Default',
+  components: {
+    Navigation
+  }
+}
+</script>
